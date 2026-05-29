@@ -4,113 +4,224 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life As Mrs. L | Home, Family and Life in Arkansas</title>
-  <meta name="description" content="Life As Mrs. L - A lifestyle blog by Christin Marie. Mom of three, teacher, homebody, Disney lover, book nerd, and proud Arkansas resident.">
+  <meta name="description" content="Life As Mrs. L — a lifestyle blog by Christin Marie. Mom of three, teacher, homebody, Disney lover, book nerd, and proud Arkansas resident.">
+  <link rel="stylesheet" href="colors_and_type.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="disclosure.html">Disclosure</a> |
-    <a href="privacy.html">Privacy Policy</a>
-  </nav>
-
   <!-- HEADER -->
-  <header>
-    <h1>Life As Mrs. L</h1>
-    <p>Mom | Teacher | Homebody | Money Saver | Disney Lover | Book Lover | Arkansas</p>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand">
+        <div class="brand__name">Life As Mrs. L</div>
+        <div class="brand__by">by Christin Marie</div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="about.html">About</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- INTRO -->
-  <section>
-    <img src="images/christin-hero.jpg" alt="Christin Marie - Life As Mrs. L">
-    <h2>Hey there, I'm Christin Marie!</h2>
-    <p>Welcome to Life As Mrs. L -- a little corner of the internet where I share our real, messy, beautiful life in Arkansas. I'm a mom of three teenagers, a teacher who genuinely loves her job, a homebody who takes her couch very seriously, and a woman on a mission to find value in everything. Oh, and I have a dog named Carmy who thinks he runs the place. He's not wrong.</p>
-    <p>Pull up a chair. You're going to feel right at home here.</p>
-    <p><a href="about.html">Read More About Me</a></p>
-  </section>
+  <!-- HERO -->
+  <div class="container">
+    <div class="home-hero" style="grid-template-columns: 1fr; text-align: center; padding: 56px 0 24px;">
+      <div>
+        <div class="home-hero__greet">Hey there!</div>
+        <h1 class="home-hero__title">I&rsquo;m Christin Marie &mdash;<br><em>welcome to my little corner</em></h1>
+        <p class="home-hero__lede">Mom of three, teacher, homebody, money saver, Disney lover, and proud Arkansas resident &mdash; sharing the real stuff from our real life.</p>
+        <div class="home-hero__chips" style="justify-content: center;">
+          <span class="chip">Mom Life</span>
+          <span class="chip">Teacher</span>
+          <span class="chip">Homebody</span>
+          <span class="chip">Disney</span>
+          <span class="chip">Books</span>
+          <span class="chip">Arkansas</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- LATEST POSTS -->
-  <section>
-    <h2>Latest Posts</h2>
+  <!-- FEATURED POST -->
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-head__title">Latest Post</h2>
+    </div>
+    <a href="posts/end-of-year-teacher-finds.html" class="featured">
+      <div class="featured__image" style="background-image: url('images/end-of-year-hero.jpg');"></div>
+      <div class="featured__body">
+        <p class="eyebrow">May 2026 &bull; Teacher Life</p>
+        <h2 class="featured__title">End of Year Teacher Life: The Last Stretch</h2>
+        <p class="featured__lede">May is a feeling. The finish line and the last mile at the same time. Here is what the last stretch of the year actually looks like from inside a classroom.</p>
+        <span class="btn btn--primary">Read More</span>
+      </div>
+    </a>
+  </div>
 
-    <article>
-      <h3><a href="posts/end-of-year-teacher-finds.html">End of Year Teacher Life: The Last Stretch</a></h3>
-      <p>May 2026</p>
-      <p>The end of the school year is equal parts exhausting and exhilarating. Here is what the last stretch of the year actually looks like from inside a classroom.</p>
-      <p><a href="posts/end-of-year-teacher-finds.html">Read More</a></p>
-    </article>
+  <!-- POST GRID -->
+  <main class="container" style="margin-top: 56px;">
+    <div class="section-head">
+      <h2 class="section-head__title">More Posts</h2>
+    </div>
+    <div class="postgrid">
 
-    <article>
-      <h3><a href="posts/walmart-home-spring-refresh.html">My Spring Home Refresh (Without Spending a Fortune)</a></h3>
-      <p>April 2026</p>
-      <p>Every spring I get the urge to refresh something in the house. Here is how I do it thoughtfully without going overboard.</p>
-      <p><a href="posts/walmart-home-spring-refresh.html">Read More</a></p>
-    </article>
+      <a href="posts/walmart-home-spring-refresh.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/spring-refresh-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">April 2026</p>
+          <h3 class="postcard__title">My Spring Home Refresh (Without Spending a Fortune)</h3>
+          <p class="postcard__lede">Every spring I get the urge to refresh something in the house. Here is how I do it thoughtfully without going overboard.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-    <article>
-      <h3><a href="posts/disney-packing-list.html">Our Disney Packing List: What We Actually Use vs. What We Regret Bringing</a></h3>
-      <p>March 2026</p>
-      <p>We have been to Disney more times than I can count. Here is our tried and true packing list and everything we have learned along the way.</p>
-      <p><a href="posts/disney-packing-list.html">Read More</a></p>
-    </article>
+      <a href="posts/disney-packing-list.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/disney-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">March 2026</p>
+          <h3 class="postcard__title">Our Disney Packing List: What We Actually Use vs. What We Regret Bringing</h3>
+          <p class="postcard__lede">We have been to Disney more times than I can count. Here is our tried and true packing list.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-    <article>
-      <h3><a href="posts/carmy-dog-walmart-finds.html">A Post About Carmy, Because He Deserves One</a></h3>
-      <p>February 2026</p>
-      <p>Carmy is picky. Carmy is dramatic. Carmy is also the most spoiled dog in Arkansas. A love letter to our dog.</p>
-      <p><a href="posts/carmy-dog-walmart-finds.html">Read More</a></p>
-    </article>
+      <a href="posts/carmy-dog-walmart-finds.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/carmy-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">February 2026</p>
+          <h3 class="postcard__title">A Post About Carmy, Because He Deserves One</h3>
+          <p class="postcard__lede">Carmy is picky, dramatic, and the most spoiled dog in Arkansas. A love letter to our dog.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-    <article>
-      <h3><a href="posts/winter-reading-list.html">What I Read This Winter (and What's Next on My Nightstand)</a></h3>
-      <p>January 2026</p>
-      <p>Nothing beats a good book and a blanket in January. Here is what I worked through this winter and what is coming next.</p>
-      <p><a href="posts/winter-reading-list.html">Read More</a></p>
-    </article>
+      <a href="posts/winter-reading-list.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/reading-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">January 2026</p>
+          <h3 class="postcard__title">What I Read This Winter (and What&rsquo;s Next on My Nightstand)</h3>
+          <p class="postcard__lede">Nothing beats a good book and a blanket in January. Here is what I worked through and what is coming next.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-    <article>
-      <h3><a href="posts/holiday-home-decor-walmart.html">Holiday Home on a Budget: How We Decorate Without Going Overboard</a></h3>
-      <p>December 2025</p>
-      <p>I love a beautifully decorated home for the holidays. I do not love spending a fortune on it. Here is how we make it work.</p>
-      <p><a href="posts/holiday-home-decor-walmart.html">Read More</a></p>
-    </article>
+      <a href="posts/holiday-home-decor-walmart.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/holiday-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">December 2025</p>
+          <h3 class="postcard__title">Holiday Home on a Budget: How We Decorate Without Going Overboard</h3>
+          <p class="postcard__lede">I love a beautifully decorated home for the holidays. I do not love spending a fortune on it.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-    <article>
-      <h3><a href="posts/home-organization-favorites.html">The Home Organization Products I Come Back to Every Single Year</a></h3>
-      <p>November 2025</p>
-      <p>I am a homebody who cannot function in a cluttered space. Here are the products and methods I have bought, loved, and used again.</p>
-      <p><a href="posts/home-organization-favorites.html">Read More</a></p>
-    </article>
+      <a href="posts/home-organization-favorites.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/organization-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">November 2025</p>
+          <h3 class="postcard__title">The Home Organization Products I Come Back to Every Single Year</h3>
+          <p class="postcard__lede">I am a homebody who cannot function in a cluttered space. Here are the products I rely on year after year.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-    <article>
-      <h3><a href="posts/teacher-classroom-fall-reset.html">Fall Classroom Reset: How I Set Up My Room Every August</a></h3>
-      <p>October 2025</p>
-      <p>Walking into an empty classroom in August and making it feel like home for 30 kids. Here is my full process from start to finish.</p>
-      <p><a href="posts/teacher-classroom-fall-reset.html">Read More</a></p>
-    </article>
+      <a href="posts/teacher-classroom-fall-reset.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/classroom-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">October 2025</p>
+          <h3 class="postcard__title">Fall Classroom Reset: How I Set Up My Room Every August</h3>
+          <p class="postcard__lede">Walking into an empty classroom in August and making it feel like home for 30 kids. Here is my full process.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-    <article>
-      <h3><a href="posts/teacher-supplies-i-buy-myself.html">The Teacher Supplies I Buy With My Own Money (And Why I Don't Mind)</a></h3>
-      <p>September 2025</p>
-      <p>Yes, teachers buy their own supplies. Here is my honest take on what I buy, why I buy it, and why I do not regret a single dollar of it.</p>
-      <p><a href="posts/teacher-supplies-i-buy-myself.html">Read More</a></p>
-    </article>
+      <a href="posts/teacher-supplies-i-buy-myself.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/teacher-supplies-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">September 2025</p>
+          <h3 class="postcard__title">The Teacher Supplies I Buy With My Own Money (And Why I Don&rsquo;t Mind)</h3>
+          <p class="postcard__lede">Yes, teachers buy their own supplies. Here is my honest take and why I do not regret a dollar of it.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-    <article>
-      <h3><a href="posts/back-to-school-three-kids.html">Back to School With Three Teenagers: What This Season Actually Looks Like</a></h3>
-      <p>August 2025</p>
-      <p>Three kids, three completely different situations this school year. Here is what back to school actually looks like in our house.</p>
-      <p><a href="posts/back-to-school-three-kids.html">Read More</a></p>
-    </article>
+      <a href="posts/back-to-school-three-kids.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/back-to-school-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">August 2025</p>
+          <h3 class="postcard__title">Back to School With Three Teenagers: What This Season Actually Looks Like</h3>
+          <p class="postcard__lede">Three kids, three completely different situations this school year. Here is what back to school looks like in our house.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
 
-  </section>
+      <a href="posts/summer-at-home-favorites.html" class="postcard">
+        <div class="postcard__image-clip">
+          <div class="postcard__image" style="background-image: url('images/summer-at-home-hero.jpg');"></div>
+        </div>
+        <div class="postcard__body">
+          <p class="eyebrow">July 2025</p>
+          <h3 class="postcard__title">Summer at Home: Our Favorite Backyard and Indoor Finds This Season</h3>
+          <p class="postcard__lede">We are homebodies through and through. Summer means backyard time, movie nights, and being comfortable at home.</p>
+          <span class="btn btn--ghost">Read More &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
 
   <!-- FOOTER -->
-  <footer>
-    <p>2026 Life As Mrs. L | Christin Marie | Arkansas</p>
-    <p><a href="disclosure.html">Disclosure</a> | <a href="privacy.html">Privacy Policy</a></p>
+  <footer class="site-footer" style="margin-top: 80px;">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a href="index.html" class="brand"><div class="brand__name">Life As Mrs. L</div></a>
+          <p class="site-footer__about">Mom of three, teacher, homebody, and proud Arkansas resident sharing the finds and moments that make everyday life a little better.</p>
+        </div>
+        <div>
+          <p class="site-footer__heading">Posts</p>
+          <ul class="site-footer__list">
+            <li><a href="posts/end-of-year-teacher-finds.html">Teacher Life</a></li>
+            <li><a href="posts/disney-packing-list.html">Disney</a></li>
+            <li><a href="posts/home-organization-favorites.html">Organization</a></li>
+            <li><a href="posts/winter-reading-list.html">Books</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">More</p>
+          <ul class="site-footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="disclosure.html">Disclosure</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>&copy; 2026 Life As Mrs. L &mdash; Christin Marie &mdash; Arkansas</span>
+        <span class="site-footer__heart">&#9825;</span>
+      </div>
+    </div>
   </footer>
 
 </body>
