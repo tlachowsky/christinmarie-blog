@@ -1,0 +1,86 @@
+{
+  "back-to-school-three-kids": {
+    "title": "Back to School for Three Kids: What We Actually Buy",
+    "description": "Shopping for three kids at once? Here's exactly what we buy for back to school without breaking the budget — middle school, high school, and everything in between. Real list from an Arkansas mom of three.",
+    "hero_image": "back-to-school-hero.jpg",
+    "board_ids": ["210332313786476656", "210332313786476660"],
+    "url": "https://christinmarie.us/posts/back-to-school-three-kids.html"
+  },
+  "carmy-dog-walmart-finds": {
+    "title": "Small Dog Must-Haves from Walmart: Carmy-Approved Finds",
+    "description": "Our small fluffy dog Carmy has opinions about everything — including his supplies. Here are the Walmart dog finds that actually passed the Carmy test. Dog mom approved.",
+    "hero_image": "carmy-hero.jpg",
+    "board_ids": ["210332313786476659", "210332313786476660"],
+    "url": "https://christinmarie.us/posts/carmy-dog-walmart-finds.html"
+  },
+  "disney-packing-list": {
+    "title": "The Disney Family Packing List From Someone Who's Done This a Lot",
+    "description": "After many Disney trips with our family, here's exactly what we pack — and what we leave home. The honest Disney packing list that will make your trip smoother.",
+    "hero_image": "disney-hero.jpg",
+    "board_ids": ["210332313786476654"],
+    "url": "https://christinmarie.us/posts/disney-packing-list.html"
+  },
+  "dorm-prep-walmart-finds": {
+    "title": "Dorm Room Essentials from Walmart: What My College Student Actually Needed",
+    "description": "Sending a kid to college? Here's the real dorm essentials list — affordable Walmart finds your college freshman will actually use, from a mom who just went through it.",
+    "hero_image": "dorm-hero.jpg",
+    "board_ids": ["210332313786476658", "210332313786476656"],
+    "url": "https://christinmarie.us/posts/dorm-prep-walmart-finds.html"
+  },
+  "end-of-year-teacher-finds": {
+    "title": "End of Year Teacher Finds: Stock Up Before Summer Break",
+    "description": "The end of the school year is the best time to find deals on classroom supplies. Here are the teacher finds worth grabbing before summer — so you're ready for fall.",
+    "hero_image": "end-of-year-hero.jpg",
+    "board_ids": ["210332313786476653"],
+    "url": "https://christinmarie.us/posts/end-of-year-teacher-finds.html"
+  },
+  "holiday-home-decor-walmart": {
+    "title": "Holiday Home Decor from Walmart That Doesn't Look Cheap",
+    "description": "Beautiful holiday decor on a real budget — all from Walmart. These are the pieces that actually make your home feel warm and festive without spending a fortune.",
+    "hero_image": "holiday-hero.jpg",
+    "board_ids": ["210332313786476657", "210332313786476652"],
+    "url": "https://christinmarie.us/posts/holiday-home-decor-walmart.html"
+  },
+  "home-organization-favorites": {
+    "title": "Home Organization Favorites: Walmart Finds That Actually Work",
+    "description": "My favorite home organization finds from Walmart — bins, baskets, labels, and everything that finally made our house feel manageable. Practical and affordable.",
+    "hero_image": "organization-hero.jpg",
+    "board_ids": ["210332313786476652", "210332313786476657"],
+    "url": "https://christinmarie.us/posts/home-organization-favorites.html"
+  },
+  "summer-at-home-favorites": {
+    "title": "Summer at Home: How We Do Summer Without Going Broke",
+    "description": "We love summer at home in Arkansas — here are the finds, activities, and simple routines that make summer with three teenagers actually enjoyable. No expensive trips required.",
+    "hero_image": "summer-at-home-hero.jpg",
+    "board_ids": ["210332313786476660", "210332313786476657"],
+    "url": "https://christinmarie.us/posts/summer-at-home-favorites.html"
+  },
+  "teacher-classroom-fall-reset": {
+    "title": "Fall Classroom Reset: How I Set Up My Room for a Fresh Start",
+    "description": "Every fall I reset my classroom completely. Here's exactly how I organize, decorate, and set up my room for a new school year — on a teacher budget, without losing my mind.",
+    "hero_image": "classroom-hero.jpg",
+    "board_ids": ["210332313786476653"],
+    "url": "https://christinmarie.us/posts/teacher-classroom-fall-reset.html"
+  },
+  "teacher-supplies-i-buy-myself": {
+    "title": "Teacher Supplies I Buy Myself (And Have Zero Regrets About)",
+    "description": "Every teacher knows we spend our own money on supplies. Here are the items I always buy myself — because they genuinely make my classroom and my students better.",
+    "hero_image": "teacher-supplies-hero.jpg",
+    "board_ids": ["210332313786476653"],
+    "url": "https://christinmarie.us/posts/teacher-supplies-i-buy-myself.html"
+  },
+  "walmart-home-spring-refresh": {
+    "title": "Spring Home Refresh from Walmart: Affordable Updates That Feel New",
+    "description": "A spring refresh doesn't have to cost a lot. These Walmart home finds gave our space a whole new feel for the season — throw pillows, storage, porch updates and more.",
+    "hero_image": "spring-refresh-hero.jpg",
+    "board_ids": ["210332313786476657", "210332313786476652"],
+    "url": "https://christinmarie.us/posts/walmart-home-spring-refresh.html"
+  },
+  "winter-reading-list": {
+    "title": "Winter Reading List: Books Worth Making Time For",
+    "description": "Winter is the season for cozy reading. Here are the books on my winter reading list — fiction favorites, emotional reads, and page-turners I loved and couldn't put down.",
+    "hero_image": "reading-hero.jpg",
+    "board_ids": ["210332313786476655", "210332313786476660"],
+    "url": "https://christinmarie.us/posts/winter-reading-list.html"
+  }
+}
