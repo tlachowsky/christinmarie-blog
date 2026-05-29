@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="#D87878"></circle>
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#FBE9E5" stroke-width="1.5" stroke-dasharray="2 4"></circle>
+  <text x="60" y="82" text-anchor="middle" class="mono">cm</text>
+</svg>

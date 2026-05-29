@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBE9E5"></stop>
+      <stop offset="1" stop-color="#F2E8DD"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"></rect>
+  
+  <g transform="translate(280,170)">
+    
+    <rect x="0" y="80" width="260" height="22" rx="4" fill="#B89C84"></rect>
+    <rect x="0" y="80" width="260" height="6" fill="#8A6F6F" opacity="0.4"></rect>
+    
+    <ellipse cx="120" cy="80" rx="56" ry="10" fill="#E89B91" opacity="0.4"></ellipse>
+    <path d="M70 0 h100 v70 a14 14 0 0 1 -14 14 h-72 a14 14 0 0 1 -14 -14 z" fill="#FFFFFF" stroke="#D87878" stroke-width="2"></path>
+    <path d="M170 18 a16 16 0 0 1 0 32" fill="none" stroke="#D87878" stroke-width="2"></path>
+    <ellipse cx="120" cy="6" rx="46" ry="6" fill="#C45F62" opacity="0.3"></ellipse>
+    
+    <path d="M100 -8 c-4 -8 4 -14 0 -22" stroke="#D87878" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"></path>
+    <path d="M120 -10 c-4 -8 4 -14 0 -24" stroke="#D87878" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"></path>
+    <path d="M140 -8 c-4 -8 4 -14 0 -22" stroke="#D87878" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"></path>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="Lora, Georgia, serif" font-style="italic" font-size="18" fill="#8A6F6F">placeholder hero — drop in real photography</text>
+</svg>

@@ -1,112 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Christin Marie | Life As Mrs. L</title>
-  <meta name="description" content="Meet Christin Marie — Arkansas mom, teacher, homebody, Disney lover, book nerd, and dog mom to Carmy. The woman behind Life As Mrs. L.">
-  <link rel="stylesheet" href="colors_and_type.css">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Christin Marie | Life As Mrs. L</title>
+<meta name="description" content="Meet Christin Marie — Arkansas mom, teacher, homebody, Disney lover, book nerd, and dog mom to Carmy. The woman behind Life As Mrs. L.">
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a href="index.html" class="brand">
-        <div class="brand__name">Life As Mrs. L</div>
-        <div class="brand__by">by Christin Marie</div>
-      </a>
-      <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="is-active">About</a>
-        <a href="disclosure.html">Disclosure</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="../index.html">
+      <span class="brand__name">Life As Mrs. L</span>
+      <span class="brand__by">by Christin Marie</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('is-open')">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <nav class="site-nav">
+      <a class="" href="../index.html">Home</a>
+      <a class="is-active" href="../about.html">About</a>
+      <a href="../disclosure.html">Disclosure</a>
+      <a href="../privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="container">
+  <section class="about-hero">
+    <div class="about-hero__photo">
+      <img src="./assets/photos/christin-carmy-porch.jpg" alt="Christin Marie with Carmy on the porch">
     </div>
-  </header>
+    <div>
+      <div class="about-hero__greet">well, hi!</div>
+      <h1 class="about-hero__title">I'm Christin Marie — and I have a feeling we're going to get along just fine.</h1>
+      <div class="about-body">
+        <p>I'm an Arkansas girl through and through. I've been teaching for years and I still love it — the kids, the chaos, the moment something clicks for a student who has been struggling. There is nothing like it. My classroom is my second home, and yes, I absolutely spend my own money on supplies to make it better. <strong>I regret nothing.</strong></p>
+        <p>At home I'm mom to three teenagers: E, my oldest, who just graduated high school and is heading off to college (I am so proud and so not ready); P, my 15-year-old son who keeps us all laughing; and A, my 14-year-old daughter who is wise beyond her years. Life with three teenagers is loud and wonderful and exhausting in the best possible way.</p>
+        <p>Then there's Carmy. He's our dog and he is, without question, the most dramatic and most beloved member of this household. He has opinions about everything, especially where he sleeps, and somehow always ends up in the best spot on the couch. I wouldn't change a thing.</p>
+        <p>When I'm not at school or wrangling my people, I am a committed homebody. I love being home. I love making our home cozy and organized and a place where everyone wants to be. I could spend an entire Saturday reorganizing a closet and be completely happy about it. Ask my family — they will confirm.</p>
+        <p>Disney is our family's love language. We have been more times than I can count and every trip feels like the first one. I am the trip planner, the packer, the one who has a spreadsheet for the itinerary. I have strong opinions about what to bring and what to leave at home, and I share all of it here.</p>
+        <p>I am also a reader. Always have been. There is nothing better than a good book and a blanket and a quiet house — a rare occurrence with three teenagers and a dramatic dog, but I take it when I can get it.</p>
+        <p>And the money saving thing? That is just who I am. Teachers do not exactly get rich, and raising three teenagers is not cheap. I have become very good at finding value without sacrificing quality, and I am here to share everything I have learned.</p>
+        <p>This blog is where all of those pieces of my life come together. It is real, it is Arkansas, it is a little chaotic, and it is very much us.</p>
+        <p><strong>I am glad you are here.</strong></p>
+      </div>
+      <div class="about-sign">— Christin Marie</div>
+    </div>
+  </section>
 
-  <!-- ABOUT HERO -->
-  <main>
-    <div class="container">
-      <div class="about-hero" style="grid-template-columns: 1fr; max-width: 720px; margin: 0 auto; padding: 64px 0 40px;">
-        <div>
-          <div class="about-hero__greet">Hey there!</div>
-          <h1 class="about-hero__title">I&rsquo;m Christin Marie</h1>
-          <div class="about-body">
+  <div class="quick-facts">
+    <h3>QUICK FACTS ABOUT MRS. L</h3>
+    <ul>
+      <li>Arkansas born and raised</li>
+      <li>Teacher (and proud of it)</li>
+      <li>Mom to E, P, and A</li>
+      <li>Dog mom to Carmy, the most dramatic dog in the state</li>
+      <li>Disney family — we go as often as we possibly can</li>
+      <li>Homebody who takes organization very seriously</li>
+      <li>Reads everything, recommends generously</li>
+      <li>Firm believer that you do not have to spend a lot to live well</li>
+    </ul>
+  </div>
 
-            <p>If you&rsquo;ve found your way here, I have a feeling we&rsquo;re going to get along just fine.</p>
+  
+<section class="newsletter">
+  <div>
+    <div class="newsletter__deco">new post —</div>
+    <h2 class="newsletter__title">Get a note when I publish</h2>
+    <p class="newsletter__lede">No newsletter, no schedule — just a quick email when something new goes up here. Unsubscribe any time.</p>
+  </div>
+  <form class="newsletter__form" onsubmit="event.preventDefault(); this.querySelector('.newsletter__row').style.display='none'; this.querySelector('.thanks').style.display='block';">
+    <div class="newsletter__row">
+      <input class="input" type="email" placeholder="your@email.com" required/>
+      <button class="btn btn--primary" type="submit">Notify me</button>
+    </div>
+    <div class="thanks" style="display:none; padding:16px 22px; background: var(--white); border-radius: 999px; font-family: var(--font-serif); font-style: italic; color: var(--cocoa-600); text-align: center;">
+      ♡ got it — I'll send a note when the next post goes up
+    </div>
+    <div class="newsletter__fine">Just post alerts. Nothing else.</div>
+  </form>
+</section>
 
-            <p>I&rsquo;m an Arkansas girl through and through. I&rsquo;ve been teaching for years and I still love it &mdash; the kids, the chaos, the moment something clicks for a student who has been struggling. There is nothing like it. My classroom is my second home, and yes, I absolutely spend my own money on supplies to make it better. I regret nothing.</p>
+</div>
 
-            <p>At home I&rsquo;m mom to three teenagers: <strong>E</strong>, my oldest, who just graduated high school and is heading off to college (I am so proud and so not ready); <strong>P</strong>, my 15-year-old son who keeps us all laughing; and <strong>A</strong>, my 14-year-old daughter who is wise beyond her years. Life with three teenagers is loud and wonderful and exhausting in the best possible way.</p>
+</main>
 
-            <p>Then there&rsquo;s <strong>Carmy</strong>. He&rsquo;s our dog and he is, without question, the most dramatic and most beloved member of this household. He has opinions about everything, especially where he sleeps, and somehow always ends up in the best spot on the couch. I wouldn&rsquo;t change a thing.</p>
-
-            <p>When I&rsquo;m not at school or wrangling my people, I am a committed homebody. I love being home. I love making our home cozy and organized and a place where everyone wants to be. I could spend an entire Saturday reorganizing a closet and be completely happy about it. Ask my family &mdash; they will confirm.</p>
-
-            <p>Disney is our family&rsquo;s love language. We have been more times than I can count and every trip feels like the first one. I am the trip planner, the packer, the one who has a spreadsheet for the itinerary. I share all of it here.</p>
-
-            <p>I am also a reader. Always have been. There is nothing better than a good book and a blanket and a quiet house &mdash; a rare occurrence with three teenagers and a dramatic dog, but I take it when I can get it.</p>
-
-            <p>And the money saving thing? That is just who I am. Teachers do not exactly get rich, and raising three teenagers is not cheap. I have become very good at finding value without sacrificing quality, and I am here to share everything I have learned.</p>
-
-            <p>This blog is where all of those pieces of my life come together. It is real, it is Arkansas, it is a little chaotic, and it is very much us.</p>
-
-            <p>I am glad you are here.</p>
-
-            <p class="about-sign">-- Christin Marie</p>
-
-          </div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="../index.html">
+          <span class="brand__name">Life As Mrs. L</span>
+          <span class="brand__by">by Christin Marie</span>
+        </a>
+        <p class="site-footer__about">Arkansas mom of three, teacher, very enthusiastic homebody, money-saver, Disney lover, and dog mom to Carmy.</p>
+        <div class="site-footer__social">
+          <a class="icon-btn" href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="Pinterest"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8c2-1 5-1 6 1.5s-1 4.5-3 4.5h-2"/><path d="M10 8L8.5 17"/><circle cx="9" cy="20" r="0.6" fill="currentColor"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
         </div>
       </div>
-
-      <!-- QUICK FACTS -->
-      <div class="quick-facts" style="max-width: 720px; margin: 0 auto 80px;">
-        <h3>Quick Facts About Mrs. L</h3>
-        <ul>
-          <li>Arkansas born and raised</li>
-          <li>Teacher &mdash; and proud of it</li>
-          <li>Mom to E (college bound), P (15), and A (14)</li>
-          <li>Dog mom to Carmy, the most dramatic dog in the state</li>
-          <li>Disney family &mdash; we go as often as we possibly can</li>
-          <li>Homebody who takes organization very seriously</li>
-          <li>Reads everything, recommends generously</li>
-          <li>Firm believer that you do not have to spend a lot to live well</li>
+      <div>
+        <h5 class="site-footer__heading">Around Here</h5>
+        <ul class="site-footer__list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../index.html#latest">Latest Posts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="site-footer__heading">Categories</h5>
+        <ul class="site-footer__list">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#classroom">Classroom</a></li>
+          <li><a href="../index.html#disney">Disney</a></li>
+          <li><a href="../index.html#books">Books</a></li>
+          <li><a href="../index.html#family">Family</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="site-footer__heading">Stay in Touch</h5>
+        <ul class="site-footer__list">
+          <li><a href="../disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="mailto:hello@christinmarie.us">hello@christinmarie.us</a></li>
         </ul>
       </div>
     </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__grid">
-        <div class="site-footer__brand">
-          <a href="index.html" class="brand"><div class="brand__name">Life As Mrs. L</div></a>
-          <p class="site-footer__about">Mom of three, teacher, homebody, and proud Arkansas resident sharing the finds and moments that make everyday life a little better.</p>
-        </div>
-        <div>
-          <p class="site-footer__heading">Explore</p>
-          <ul class="site-footer__list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="site-footer__heading">Legal</p>
-          <ul class="site-footer__list">
-            <li><a href="disclosure.html">Disclosure</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="site-footer__bottom">
-        <span>&copy; 2026 Life As Mrs. L &mdash; Christin Marie &mdash; Arkansas</span>
-        <span class="site-footer__heart">&#9825;</span>
-      </div>
+    <div class="site-footer__bottom">
+      <div>© 2026 Life As Mrs. L · Christin Marie · made at home in Arkansas</div>
+      <div class="site-footer__heart">♡</div>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
