@@ -1,0 +1,319 @@
+/* =========================================================
+   ChristinMarie Design System — Colors & Type
+   Load this in any HTML artifact:
+     <link rel="stylesheet" href="colors_and_type.css">
+   ========================================================= */
+
+/* ---- Fonts (Google Fonts CDN) ----
+   Display script: Sacramento
+   Heading serif:  Lora (400, 500, 600 italic)
+   Body sans:      Nunito Sans (300, 400, 600, 700)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&display=swap");
+
+:root {
+  /* ============ COLORS — Base palette ============ */
+
+  /* Pinks (the heart of the brand) */
+  --blush-50:  #FDF4F2;   /* near-white wash */
+  --blush-100: #FBE9E5;   /* lightest section background */
+  --blush-200: #F8D9D3;   /* hover wash */
+  --blush-300: #F4C2BA;   /* soft accent */
+  --rose-400:  #E89B91;   /* primary pink */
+  --rose-500:  #D87878;   /* primary CTA */
+  --rose-600:  #C45F62;   /* CTA hover / press */
+  --rose-700:  #9E4548;   /* deep emphasis, rarely used */
+
+  /* Warm neutrals (terracotta + sand, never cool gray) */
+  --cream:      #FBF5F0;  /* page background */
+  --linen:      #F2E8DD;  /* card secondary background */
+  --sand:       #E8D9C7;  /* dividers, subtle fills */
+  --taupe:      #B89C84;  /* muted icons, metadata */
+  --cocoa-400:  #8A6F6F;  /* secondary text */
+  --cocoa-600:  #5C4444;  /* heading text */
+  --cocoa-800:  #3D2828;  /* body text (darkest token — no true black) */
+
+  /* Pure white for cards lifted off cream */
+  --white: #FFFFFF;
+
+  /* Semantic accents — used very sparingly */
+  --sage:   #9DB68C;      /* success / new */
+  --honey:  #D9A85A;      /* warning / sale tag */
+  --berry:  #B85563;      /* destructive / "out of stock" */
+
+  /* ============ COLORS — Semantic tokens ============ */
+  --bg:           var(--cream);
+  --bg-elevated:  var(--white);
+  --bg-muted:     var(--linen);
+  --bg-accent:    var(--blush-100);
+
+  --fg:           var(--cocoa-800);   /* body */
+  --fg-muted:     var(--cocoa-400);   /* metadata, captions */
+  --fg-subtle:    var(--taupe);       /* placeholder, disabled */
+  --fg-heading:   var(--cocoa-600);
+  --fg-onPink:    var(--white);
+  --fg-link:      var(--rose-500);
+  --fg-link-hover:var(--rose-600);
+
+  --border-soft:    #EFE2DA;
+  --border-blush:   var(--blush-200);
+  --border-strong:  var(--sand);
+
+  --accent:         var(--rose-500);
+  --accent-hover:   var(--rose-600);
+  --accent-soft:    var(--blush-100);
+  --accent-fg:      var(--white);
+
+  /* ============ SHADOWS — warm-tinted, single direction ============ */
+  --shadow-sm: 0 1px 2px rgba(168, 100, 100, 0.06),
+               0 1px 3px rgba(168, 100, 100, 0.04);
+  --shadow-md: 0 4px 12px rgba(168, 100, 100, 0.08),
+               0 2px 4px rgba(168, 100, 100, 0.05);
+  --shadow-lg: 0 16px 40px rgba(168, 100, 100, 0.12),
+               0 4px 12px rgba(168, 100, 100, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(216, 120, 120, 0.22);
+
+  /* ============ RADII ============ */
+  --radius-xs:    4px;
+  --radius-sm:    8px;
+  --radius-md:    16px;
+  --radius-lg:    24px;
+  --radius-xl:    32px;
+  --radius-pill:  999px;
+
+  /* ============ SPACING — 4px base ============ */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  80px;
+  --space-10: 96px;
+  --space-11: 128px;
+  --space-12: 160px;
+
+  /* ============ MOTION ============ */
+  --ease-soft:  cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-soft: cubic-bezier(0.4, 0, 0.6, 1);
+  --dur-fast:   140ms;
+  --dur-hover:  180ms;
+  --dur-base:   260ms;
+  --dur-enter:  360ms;
+  --dur-slow:   600ms;
+
+  /* ============ TYPOGRAPHY — Families ============ */
+  --font-script:  "Sacramento", "Brush Script MT", cursive;
+  --font-serif:   "Lora", "Cormorant Garamond", Georgia, serif;
+  --font-sans:    "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ============ TYPOGRAPHY — Scale ============ */
+  --fs-xs:    12px;
+  --fs-sm:    14px;
+  --fs-base:  17px;
+  --fs-md:    19px;
+  --fs-lg:    22px;
+  --fs-xl:    28px;
+  --fs-2xl:   36px;
+  --fs-3xl:   48px;
+  --fs-4xl:   64px;
+  --fs-display: 88px;     /* Sacramento script display */
+
+  --lh-tight:  1.15;
+  --lh-snug:   1.3;
+  --lh-base:   1.55;
+  --lh-relaxed:1.7;
+
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.06em;
+  --tracking-wider:  0.14em;
+}
+
+/* =========================================================
+   Semantic element styles
+   Use these by including this CSS — body, h1-h6, etc are styled directly.
+   ========================================================= */
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---- Display (script) — wordmark + occasional "hello" moments ---- */
+.display, .cm-display {
+  font-family: var(--font-script);
+  font-size: var(--fs-display);
+  line-height: 1;
+  color: var(--rose-500);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* ---- Headings (Lora serif) ---- */
+h1, .h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-heading);
+  margin: 0 0 var(--space-4);
+}
+h2, .h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-snug);
+  color: var(--fg-heading);
+  margin: 0 0 var(--space-4);
+}
+h3, .h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg-heading);
+  margin: 0 0 var(--space-3);
+}
+h4, .h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-snug);
+  color: var(--fg-heading);
+  margin: 0 0 var(--space-3);
+}
+h5, .h5 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--fs-md);
+  line-height: var(--lh-snug);
+  color: var(--fg-heading);
+  margin: 0 0 var(--space-2);
+}
+h6, .h6 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  margin: 0 0 var(--space-2);
+}
+
+/* ---- Body ---- */
+p, .p {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  color: var(--fg);
+  text-wrap: pretty;
+}
+.lede {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--cocoa-600);
+}
+.meta {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  color: var(--fg-muted);
+  letter-spacing: 0.01em;
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--rose-500);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+}
+small { font-size: var(--fs-sm); color: var(--fg-muted); }
+
+/* ---- Links ---- */
+a {
+  color: var(--fg-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--blush-200);
+  transition: color var(--dur-hover) var(--ease-soft),
+              text-decoration-color var(--dur-hover) var(--ease-soft);
+}
+a:hover {
+  color: var(--fg-link-hover);
+  text-decoration-color: var(--rose-400);
+}
+
+/* ---- Code / mono ---- */
+code, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+code {
+  background: var(--blush-100);
+  color: var(--rose-700);
+  padding: 0.1em 0.4em;
+  border-radius: var(--radius-xs);
+}
+pre {
+  background: var(--linen);
+  color: var(--cocoa-800);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  line-height: var(--lh-base);
+}
+
+/* ---- Blockquote ---- */
+blockquote {
+  margin: var(--space-6) 0;
+  padding: var(--space-4) var(--space-5);
+  border-left: 3px solid var(--rose-400);
+  background: var(--blush-50);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  color: var(--cocoa-600);
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* ---- HR / divider ---- */
+hr {
+  border: none;
+  border-top: 1px solid var(--border-blush);
+  margin: var(--space-7) 0;
+}
+
+/* ---- Selection ---- */
+::selection {
+  background: var(--blush-200);
+  color: var(--cocoa-800);
+}
+
+/* ---- Focus rings ---- */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-sm);
+}

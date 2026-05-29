@@ -1,3 +1,19 @@
 # Legal docs — not for public repo
 *.docx
 walmart creator terms.txt
+
+# Environment / secrets — never commit
+.env
+
+# Source assets not needed in repo
+Pictures/
+(1) Facebook.html
+(1) Facebook_files/
+ChristinMarie Design System.zip
+Design Info/
+*.zip
+_strategy/
+
+# Personal photos
+440336395_10105251489175941_4516219434641395597_n.jpg
+556585874_10106745914306001_5888789199813519_n.jpg
