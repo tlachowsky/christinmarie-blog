@@ -6,6 +6,27 @@
 <title>Life As Mrs. L | Home, Family and Life in Arkansas</title>
 <meta name="description" content="Life As Mrs. L — a lifestyle blog by Christin Marie. Mom of three, teacher, homebody, Disney lover, book nerd, and proud Arkansas resident.">
 <link rel="stylesheet" href="./styles.css">
+<style>
+  /* Pinterest-style image overlays on post cards */
+  .postcard__image-clip { position: relative; }
+  .postcard__pin-label {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 48px 14px 13px;
+    background: linear-gradient(to top, rgba(61,40,40,0.88) 0%, rgba(61,40,40,0.28) 58%, transparent 100%);
+    pointer-events: none;
+  }
+  .postcard__pin-cat {
+    display: block;
+    font-family: var(--font-sans); font-size: 9px; font-weight: 800;
+    color: rgba(255,255,255,0.80); letter-spacing: 0.16em; text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .postcard__pin-title {
+    display: block;
+    font-family: var(--font-serif); font-size: 14px; line-height: 1.3;
+    color: #fff; font-weight: 500;
+  }
+</style>
 </head>
 <body>
 
@@ -53,7 +74,7 @@
 
 <div class="container" id="latest">
   <a class="featured" href="./posts/end-of-year-teacher-finds.html">
-    <div class="featured__image" style="background: linear-gradient(135deg, #F2E8DD, #E8D9C7);"></div>
+    <div class="featured__image" style="background-image: url('./images/end-of-year-hero.jpg'); background-size: cover; background-position: center;"></div>
     <div class="featured__body">
       <div class="eyebrow">FEATURED · CLASSROOM</div>
       <h2 class="featured__title">End of Year Teacher Life: The Last Stretch</h2>
@@ -68,10 +89,14 @@
         <h2 class="section-head__title">Latest from the blog</h2>
       </div>
       <div class="postgrid">
-        
+
         <a class="postcard" href="./posts/dorm-prep-walmart-finds.html" id="family">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #FBE9E5, #F8D9D3);"></div>
+            <div class="postcard__image" style="background-image: url('./images/dorm-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">FAMILY</span>
+              <span class="postcard__pin-title">Dorm Room Essentials</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">FAMILY</div>
@@ -80,9 +105,14 @@
             <div class="meta">July 2026<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/summer-at-home-favorites.html" id="home">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #FDF4F2, #FBE9E5);"></div>
+            <div class="postcard__image" style="background-image: url('./images/summer-at-home-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">HOME</span>
+              <span class="postcard__pin-title">Summer at Home Favorites</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">HOME</div>
@@ -91,9 +121,14 @@
             <div class="meta">June 2026<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/walmart-home-spring-refresh.html" id="home">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #FBE9E5, #F4C2BA);"></div>
+            <div class="postcard__image" style="background-image: url('./images/spring-refresh-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">HOME</span>
+              <span class="postcard__pin-title">Spring Home Refresh</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">HOME</div>
@@ -102,9 +137,14 @@
             <div class="meta">April 2026<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/disney-packing-list.html" id="disney">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #E89B91, #F4C2BA);"></div>
+            <div class="postcard__image" style="background-image: url('./images/disney-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">DISNEY</span>
+              <span class="postcard__pin-title">Disney Packing List</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">DISNEY</div>
@@ -113,9 +153,14 @@
             <div class="meta">March 2026<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/carmy-dog-walmart-finds.html" id="family">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background-image: url('../assets/photos/christin-carmy-porch.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__image" style="background-image: url('./images/carmy-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">FAMILY</span>
+              <span class="postcard__pin-title">A Post About Carmy ♡</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">FAMILY</div>
@@ -124,9 +169,14 @@
             <div class="meta">February 2026<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/winter-reading-list.html" id="books">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #F2E8DD, #B89C84);"></div>
+            <div class="postcard__image" style="background-image: url('./images/reading-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">BOOKS</span>
+              <span class="postcard__pin-title">Winter Reading List</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">BOOKS</div>
@@ -135,9 +185,14 @@
             <div class="meta">January 2026<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/holiday-home-decor-walmart.html" id="home">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #F4C2BA, #C45F62);"></div>
+            <div class="postcard__image" style="background-image: url('./images/holiday-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">HOME</span>
+              <span class="postcard__pin-title">Holiday Home on a Budget</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">HOME</div>
@@ -146,9 +201,14 @@
             <div class="meta">December 2025<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/home-organization-favorites.html" id="home">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #FBE9E5, #F2E8DD);"></div>
+            <div class="postcard__image" style="background-image: url('./images/organization-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">HOME</span>
+              <span class="postcard__pin-title">Home Organization Wins</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">HOME</div>
@@ -157,9 +217,14 @@
             <div class="meta">November 2025<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/teacher-classroom-fall-reset.html" id="teacher">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #F2E8DD, #E8D9C7);"></div>
+            <div class="postcard__image" style="background-image: url('./images/classroom-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">CLASSROOM</span>
+              <span class="postcard__pin-title">Fall Classroom Reset</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">CLASSROOM</div>
@@ -168,9 +233,14 @@
             <div class="meta">October 2025<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/teacher-supplies-i-buy-myself.html" id="teacher">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #FBF5F0, #F2E8DD);"></div>
+            <div class="postcard__image" style="background-image: url('./images/teacher-supplies-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">CLASSROOM</span>
+              <span class="postcard__pin-title">Supplies I Buy Myself</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">CLASSROOM</div>
@@ -179,9 +249,14 @@
             <div class="meta">September 2025<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
         <a class="postcard" href="./posts/back-to-school-three-kids.html" id="family">
           <div class="postcard__image-clip">
-            <div class="postcard__image" style="background: linear-gradient(135deg, #F8D9D3, #E8D9C7);"></div>
+            <div class="postcard__image" style="background-image: url('./images/back-to-school-hero.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="postcard__pin-label">
+              <span class="postcard__pin-cat">FAMILY</span>
+              <span class="postcard__pin-title">Back to School × 3</span>
+            </div>
           </div>
           <div class="postcard__body">
             <div class="eyebrow">FAMILY</div>
@@ -190,6 +265,7 @@
             <div class="meta">August 2025<span class="meta__dot">·</span><span class="meta__highlight">Read more →</span></div>
           </div>
         </a>
+
       </div>
     </div>
 
@@ -217,7 +293,7 @@
     </aside>
   </div>
 
-  
+
 <section class="newsletter">
   <div>
     <div class="newsletter__deco">new post —</div>
